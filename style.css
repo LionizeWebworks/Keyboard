@@ -19,21 +19,35 @@ button {
     padding: 0;
     font-family: 'default', Arial, Helvetica, sans-serif;
     font-size: 30px;
-    border: 5px outset black;
+    background-color:rgb(248, 250, 160);
+    border: 5px outset rgb(0, 0, 0);
     border-radius: 10px;
     margin: 2px;
+}
+
+button:active {
+    background-color:rgb(252, 255, 85);
+    border: 5px inset black;
+}
+
+img {
+    height: 150px;
 }
 
 #output {
     display: flex;
     justify-content: center;
     height: 100px;
-    margin-bottom: 20px;
     background-color: white;
-    border: 3px solid black;
+    border: 3px outset rgb(255, 238, 0);
     font-family: 'default', Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
+}
+
+#keyboard {
+    padding: 5px;
+    border: 4px dashed rgb(0, 0, 168);
 }
 
 .keys {
@@ -47,8 +61,8 @@ button {
 .box-control {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 30px;
+    justify-content: space-evenly;
+    margin: 20px;
 }
 
 
@@ -60,4 +74,25 @@ button {
 .function {
     width: 100px;
     font-size: 20px;
+}
+
+#pictures {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+#text {
+    display: flex;
+    justify-content: center;
+    font-family: 'default', 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: black;
+    }
+
+u {
+    display: inline;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    color: rgb(0, 0, 0);
 }
